@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Crear un Proyecto en Django</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="logo">
+            <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo" class="logo">
+        </div>
+        <h1>Cómo Crear un Proyecto en Django</h1>
+    </header>
+
+    <section class="steps">
+        <h2>Paso a Paso</h2>
+        <div class="step">
+            <h3>Paso 1: Crear un Directorio para el Proyecto</h3>
+            <p>Abre Visual Studio Code, abre una nueva terminal y navega al directorio donde quieres crear tu proyecto Django:</p>
+            <div class="code-block">
+                <pre><code>mkdir mi_proyecto_django
+cd mi_proyecto_django</code></pre>
+                <button onclick="copyCode(this)">Copiar</button>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Paso 2: Crear un Entorno Virtual</h3>
+            <p>Crea y activa un entorno virtual:</p>
+            <div class="code-block">
+                <pre><code>python -m venv venv
+.\venv\Scripts\activate</code></pre>
+                <button onclick="copyCode(this)">Copiar</button>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Paso 3: Instalar Django</h3>
+            <p>Instala Django en el entorno virtual:</p>
+            <div class="code-block">
+                <pre><code>pip install django</code></pre>
+                <button onclick="copyCode(this)">Copiar</button>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Paso 4: Crear el Proyecto Django</h3>
+            <p>Crea un nuevo proyecto Django:</p>
+            <div class="code-block">
+                <pre><code>django-admin startproject mi_proyecto .</code></pre>
+                <button onclick="copyCode(this)">Copiar</button>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Paso 5: Ejecutar el Servidor de Desarrollo</h3>
+            <p>Navega a la carpeta del proyecto y ejecuta el servidor de desarrollo:</p>
+            <div class="code-block">
+                <pre><code>cd mi_proyecto
+python manage.py runserver</code></pre>
+                <button onclick="copyCode(this)">Copiar</button>
+            </div>
+        </div>
+        <div class="step">
+            <h3>Paso 6: Crear un Repositorio Git (Opcional)</h3>
+            <p>Inicializa un repositorio Git para tu proyecto:</p>
+            <div class="code-block">
+                <pre><code>git init
+git add .
+git commit -m "Initial commit"</code></pre>
+                <button onclick="copyCode(this)">Copiar</button>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="image-section">
+        <h3>Para ver el proyecto , deben ir a http://localhost:8000/</h3>
+        <img src="django.jpg" alt="Django Logo">
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Proyecto Django Tutorial</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
